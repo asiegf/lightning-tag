@@ -1,0 +1,48 @@
+{
+  "name": "lightningtag",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "cljs:repl": "clj -M -m krell.main -co build.edn -c -r",
+    "build-storybook": "build-storybook",
+    "cljs:build": "clj -M -m krell.main -co build.edn -c",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "storybook": "start-storybook -p 6006",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@cljs-oss/module-deps": "^1.1.1",
+    "react": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-device-info": "8.1.2",
+    "react-native-tcp-socket": "5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "@babel/core": "^7.12.9",
+    "dashify": "^2.0.0",
+    "@storybook/addon-react-native-web": "^0.0.18",
+    "@storybook/testing-library": "^0.0.11",
+    "@storybook/react": "^6.5.6",
+    "babel-jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.72.3",
+    "@babel/runtime": "^7.12.5",
+    "nbb": "0.5.103",
+    "jest": "^26.6.3",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@storybook/addon-interactions": "^6.5.6",
+    "react-dom": "^18.1.0",
+    "@storybook/addon-essentials": "^6.5.6",
+    "react-native-web": "^0.17.7",
+    "@storybook/addon-actions": "^6.5.6",
+    "babel-plugin-react-native-web": "^0.17.7",
+    "@storybook/addon-links": "^6.5.6",
+    "react-test-renderer": "18.1.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
